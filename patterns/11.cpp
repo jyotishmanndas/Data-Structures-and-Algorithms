@@ -1,4 +1,9 @@
 
+// 1 2 3 4 5
+// 2     5
+// 3   5
+// 4 5
+// 5
 
 #include <iostream>
 using namespace std;
@@ -10,39 +15,46 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < i + 1; j++)
+        for (int j = i; j < n; j++)
         {
-            if (i == 0 || i == n - 1)
+            if (i == 0 || j == i || j == n - 1)
             {
-                cout << j + 1;
+                cout << j + 1 << " ";
+            }
+            else
+            {
+                cout << "  ";
             }
         }
         cout << endl;
     }
 }
 
-// if (i == 0 || i == n - i)
+// int main()
 // {
-//     cout << j + 1;
-// }
-// else
-// {
-//     if (j == 0 || j == n - i - 1)
+//     int n;
+//     cin >> n;
+
+//     for (int i = 0; i < n; i++)
 //     {
-//         if (j % 2 == 1)
+//         for (int j = i; j < n; j++)
 //         {
-//             cout << " ";
+//             if (i == 0 || i == n - 1)
+//             {
+//                 cout << j + 1 << " ";
+//             }
+//             else
+//             {
+//                 if (j == i || j == n - 1)
+//                 {
+//                     cout << j + 1 << " ";
+//                 }
+//                 else
+//                 {
+//                     cout << "  ";
+//                 }
+//             }
 //         }
-//         else
-//         {
-//             cout << j + 1;
-//         }
+//         cout << endl;
 //     }
 // }
-
-
-// 1
-// 1 - 2
-// 1 - - 3
-// 1 - - - 4
-// 1 2 3 4 5

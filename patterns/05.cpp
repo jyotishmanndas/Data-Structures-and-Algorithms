@@ -31,7 +31,6 @@ int main()
     }
 }
 
-
 // Inverted Full Pyramid
 
 // * * * *
@@ -61,14 +60,11 @@ int main()
     }
 }
 
-
-
 //            1
 //          1 2 3
 //        1 2 3 4 5
 //     1 2 3 4 5 6 7
 //   1 2 3 4 5 6 7 8 9
-
 
 int main()
 {
@@ -85,6 +81,32 @@ int main()
         for (int k = 0; k < i + 1; k++)
         {
             cout << k + 1 << " ";
+        }
+        cout << endl;
+    }
+}
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+
+        for (int k = 0; k < 2 * i + 1; k++)
+        {
+            cout << "*";
         }
         cout << endl;
     }
