@@ -34,8 +34,8 @@ bool checkPrime(int n)
         {
             return false;
         }
-        return true;
     }
+    return true;
 }
 
 int main()
